@@ -14,9 +14,27 @@
             <img class="object-cover max-w-12 max-h-12" src="https://www.todesktop.com/cdn-cgi/image/width=48,height=48,f=auto,fit=cover/_app/immutable/assets/todesktop-logo.bn2Qe8sb.png" alt="Logo">
             <span class="text-lg font-medium font-display">ToDesktop</span>
         </a>
-        <button class="p-2" onclick="handleMenu()">
+        <!-- Nav Menu starts-->
+        <div class="hidden md:flex gap-12">
+            <a href="#" class="font-medium hover:text-primary">Pricing</a>
+            <a href="#" class="font-medium hover:text-primary">Docs</a>
+            <a href="#" class="font-medium hover:text-primary">Changelog</a>
+            <a href="#" class="font-medium hover:text-primary">Blog</a>
+            <a href="#" class="font-medium hover:text-primary">Login</a>
+        </div>
+        <!-- Nav Menu ends-->
+
+        <!-- Electron Developers button starts -->
+        <button class="hidden md:block">
+            Electron Developers
+        </button>
+        <!-- Electron Developers button ends -->
+
+        <!-- Hamburger icon for smaller devices starts-->
+        <button class="p-2 md:hidden" onclick="handleMenu()">
             <i class="fa-solid fa-bars text-gray-600"></i>
         </button>
+        <!-- Hamburger icon for smaller devices ends-->
     </nav>
 </body>
 <script src="script.js"></script>
