@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Navbar starts-->
-    <nav class="p-3 flex bg-white justify-between items-center">
+    <nav class="p-3 flex bg-white justify-between items-center fixed top-0 left-0 right-0 z-20 shadow-md">
         <a href="#" class="flex gap-2 items-center flex-1">
             <img class="object-cover max-w-12 max-h-12" src="https://www.todesktop.com/cdn-cgi/image/width=48,height=48,f=auto,fit=cover/_app/immutable/assets/todesktop-logo.bn2Qe8sb.png" alt="Logo">
             <span class="text-lg font-semibold font-display">ToDesktop</span>
@@ -28,7 +28,7 @@
         <div class="hidden lg:flex flex-1 justify-end">
             <button class="font-semibold gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
                 <img src="https://www.todesktop.com/_app/immutable/assets/electron-icon.E8mrXtZM.svg" alt="">
-                <span>Electron Developer</span>
+                <span class="font-display font-semibold">Electron Developer</span>
                 <i class="fa-solid fa-arrow-right"></i>
             </button>
         </div>
@@ -74,7 +74,7 @@
                 <a href="#" class="font-semibold m-3 p-3 hover:bg-gray-50 block rounded-lg">Login</a>
              </div>
 
-             <div class="h-[1px] bg-gray-50"></div>
+             <div class="h-[1px] bg-gray-300"></div>
 
              <button class="w-full mt-6 flex font-semibold gap-2 items-center px-6 py-4 rounded-lg hover:bg-gray-50 ">
                 <img src="https://www.todesktop.com/_app/immutable/assets/electron-icon.E8mrXtZM.svg" alt="">
@@ -87,12 +87,12 @@
 
 
     <!-- Main Section starts -->
-    <main>
+    <main class="mt-16">
 
         <!-- Hero Section starts -->
          <div id="hero" class="min-h-screen bg-gradient-to-b from-purple-50 via-orange-50 to-transparent">
             <!-- Hero container starts -->
-            <div id="hero-container" class="max-w-4xl mx-auto px-6 pt-6 pb-32 flex flex-col sm:items-center sm:text-center sm:pt-12">
+            <div id="hero-container" class="max-w-4xl mx-auto px-6 pt-6 pb-16 flex flex-col sm:items-center sm:text-center sm:pt-12 sm:max-w-2xl">
                 
                 <!-- Version text starts-->
                 <div id="version-text" class="flex items-center my-6 gap-2 border border-yellow-300 bg-yellow-50 rounded-lg px-3 py-1 w-fit shadow-md hover:shadow-lg hover:-translate-y-1 transition group">
@@ -110,17 +110,17 @@
                         <p>Code Optional</p>
                     </div>
                     <div class="flex justify-center gap-2 items-center text-gray-500">
-                        <i class="fa-solid fa-hand-back-fist text-sm"></i>
+                        <i class="fa-solid fa-hand-back-fist"></i>
                         <p>Drag & drop builder</p>
                     </div>
                     <div class="flex justify-center gap-2 items-center text-gray-500">
-                        <i class="fa-solid fa-laptop text-sm"></i>
+                        <i class="fa-solid fa-laptop"></i>
                         <p>Windows, Mac, Linux</p>
                     </div>
                 </div>
 
                 <!-- Heading and Paragraph starts-->
-                 <h1 class="text-4xl font-semibold leading-snug mt-4 sm:text-7xl sm:leading-normal">Web app to desktop app in minutes</h1>
+                 <h1 class="text-4xl font-semibold leading-snug mt-4 sm:text-6xl sm:leading-normal">Web app to desktop app in minutes</h1>
                  <p class="text-xl text-gray-800 mt-4 sm:text-2xl sm:mt-8">Take your web app codebase and transform it into a cross platform desktop app with native functionality.</p>
 
                 <!-- Buttons after heading and paragraph -->
@@ -133,7 +133,7 @@
              
 
             <!-- Companies container starts -->
-            <div id="companies-container" class="flex flex-col gap-8">
+            <div id="companies-container" class="flex flex-col gap-10">
 
                 <!-- Companies title starts -->
                 <div id="companies-title" class="flex justify-center gap-2">
@@ -144,197 +144,208 @@
                 <!-- Companies title ends -->
 
                 <!-- Companies lines group starts -->
-                <div id="companies-lines-group" class="flex flex-col gap-4">
+                <div id="companies-lines-group" class="flex flex-col gap-4 relative overflow-hidden">
 
 
-                    <div id="line1" class="flex gap-4 w-screen -translate-x-48">
+                    <div id="line1" class="flex gap-4 w-screen -translate-x-48 transition-transform ease-linear">
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
                             <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-ReadyRunner.E1mlS2ng.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">ReadyRunner</span>
+                            <span class="text-[12px] lg:text-[16px] font-semibold">ReadyRunner</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
                             <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-LifeAt.-Gg__Z7j.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">LifeAt</span>
+                            <span class="text-[12px] lg:text-[16px] font-semibold">LifeAt</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
                             <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Convy.-nvozOOU.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Convy</span>
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Convy</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
                             <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Morgen.T902B6yE.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Morgen</span>
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Morgen</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
                             <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Campsite.zLN9hc3H.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Campsite</span>
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Campsite</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
                             <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Rise._nYytet0.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Rise</span>
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Rise</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-ReadyRunner.E1mlS2ng.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">ReadyRunner</span>
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-ClickUp.plcdS9Wy.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">ClickUp</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-LifeAt.-Gg__Z7j.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">LifeAt</span>
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-NotionCalendar.RC5iC-Ww.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Notion</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Convy.-nvozOOU.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Convy</span>
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Sunsama.sysR-7s-.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Sunsama</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Morgen.T902B6yE.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Morgen</span>
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Beeper.vXFMsQ7M.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Beeper</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Campsite.zLN9hc3H.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Campsite</span>
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Cal.tNj98lGU.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Cal</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Rise._nYytet0.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Rise</span>
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Webstudio.zTfi1fj8.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">WebStudio</span>
                         </div>
                     </div>
 
 
 
-                    <div id="line2" class="flex gap-4 w-screen -translate-x-36">
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-ReadyRunner.E1mlS2ng.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">ReadyRunner</span>
+                    <div id="line2" class="flex gap-4 w-screen -translate-x-36 transition-transform ease-linear">
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Slite.CUJ2gxTv.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Slite</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-LifeAt.-Gg__Z7j.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">LifeAt</span>
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Typefully.4TRxK4Xu.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Typefully</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Convy.-nvozOOU.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Convy</span>
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Unbounce.P8n0k4Cq.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Unbounce</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Morgen.T902B6yE.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Morgen</span>
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Moises.AiW9adgp.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Moises</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Campsite.zLN9hc3H.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Campsite</span>
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Basedash.3zVpqFz2.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Bashdash</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Rise._nYytet0.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Rise</span>
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Cursor.BL-Q9qKK.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Cursor</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-ReadyRunner.E1mlS2ng.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">ReadyRunner</span>
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Linear.BJ6nQ1Yg.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Linear</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-LifeAt.-Gg__Z7j.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">LifeAt</span>
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Voiceflow.VziEVPjD.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Voiceflow</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Convy.-nvozOOU.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Convy</span>
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Kitemaker.T5qcAjAr.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Kitemaker</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Morgen.T902B6yE.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Morgen</span>
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Cron.LilezSwz.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Cron</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Campsite.zLN9hc3H.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Campsite</span>
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Bento.sWc6My29.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Bento</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Rise._nYytet0.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Rise</span>
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Grain.b-czaeXc.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Grain</span>
+                        </div>
+
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Beeper.vXFMsQ7M.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Beeper</span>
+                        </div>
+                        
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Bento.sWc6My29.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Bento</span>
                         </div>
                     </div>
 
 
 
-                    <div id="line3" class="flex gap-4 w-screen -translate-x-48">
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
+                    <div id="line3" class="flex md:hidden gap-4 w-screen -translate-x-48 transition-transform ease-linear">
+                        
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Beeper.vXFMsQ7M.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Beeper</span>
+                        </div>
+                        
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Bento.sWc6My29.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Bento</span>
+                        </div>
+                        
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Grain.b-czaeXc.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Grain</span>
+                        </div>
+                        
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Webstudio.zTfi1fj8.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">WebStudio</span>
+                        </div>
+                        
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Conjure.cRVPwZgu.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Conjure</span>
+                        </div>
+
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Modyfi.XB7uNI0T.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Modyfi</span>
+                        </div>
+
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Superpowered.tHC_RfpU.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Superpowered</span>
+                        </div>
+
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
                             <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-ReadyRunner.E1mlS2ng.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">ReadyRunner</span>
+                            <span class="text-[12px] lg:text-[16px] font-semibold">ReadyRunner</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Cal.tNj98lGU.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Cal</span>
+                        </div>
+
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=96,height=96,f=auto,fit=cover/_app/immutable/assets/customer-logo-Typefully.4TRxK4Xu.png" alt="">
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Typefully</span>
+                        </div>
+
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
                             <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-LifeAt.-Gg__Z7j.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">LifeAt</span>
+                            <span class="text-[12px] lg:text-[16px] font-semibold">LifeAt</span>
                         </div>
 
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
+                        <div class="flex flex-col gap-2 min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
                             <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Convy.-nvozOOU.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Convy</span>
-                        </div>
-
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Morgen.T902B6yE.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Morgen</span>
-                        </div>
-
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Campsite.zLN9hc3H.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Campsite</span>
-                        </div>
-
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Rise._nYytet0.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Rise</span>
-                        </div>
-
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-ReadyRunner.E1mlS2ng.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">ReadyRunner</span>
-                        </div>
-
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-LifeAt.-Gg__Z7j.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">LifeAt</span>
-                        </div>
-
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Convy.-nvozOOU.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Convy</span>
-                        </div>
-
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Morgen.T902B6yE.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Morgen</span>
-                        </div>
-
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Campsite.zLN9hc3H.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Campsite</span>
-                        </div>
-
-                        <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
-                            <img class="w-12 h-12 md:w-16 md:h-16" src="https://www.todesktop.com/cdn-cgi/image/width=192,height=192,f=auto,fit=cover/_app/immutable/assets/customer-logo-Rise._nYytet0.png" alt="">
-                            <span class="text-[12px] md:text-[16px] font-semibold">Rise</span>
+                            <span class="text-[12px] lg:text-[16px] font-semibold">Convy</span>
                         </div>
                     </div>
 
