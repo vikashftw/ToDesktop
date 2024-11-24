@@ -41,7 +41,9 @@
         <!-- Making Hamburger icon work when clicked -->
 
         <!-- inset 0 is used to give width and height to the div below of entire viewport -->
-         <div id="nav-dialog" class="fixed bg-white inset-0 p-3 hidden md:hidden">
+        <!-- md:hidden is put so that if someone opens hamburger, and then stretches screen, it auto hides (or closes) -->
+        <!-- elements with higher z-index are rendered on top of those with lower z-index -->
+         <div id="nav-dialog" class="fixed z-10 bg-white inset-0 p-3 hidden md:hidden">
 
             <!-- Navbar (after clicking Hamburger icon) starts-->
              <div class="flex justify-between">
