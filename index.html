@@ -15,7 +15,7 @@
             <span class="text-lg font-semibold font-display">ToDesktop</span>
         </a>
         <!-- Nav Menu starts-->
-        <div class="hidden md:flex gap-12">
+        <div class="hidden lg:flex gap-12">
             <a href="#" class="font-semibold hover:text-primary">Pricing</a>
             <a href="#" class="font-semibold hover:text-primary">Docs</a>
             <a href="#" class="font-semibold hover:text-primary">Changelog</a>
@@ -25,7 +25,7 @@
         <!-- Nav Menu ends-->
 
         <!-- Electron Developer button starts -->
-        <button class="hidden md:flex font-semibold gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600 ">
+        <button class="hidden lg:flex font-semibold gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600 ">
             <img src="https://www.todesktop.com/_app/immutable/assets/electron-icon.E8mrXtZM.svg" alt="">
             <span>Electron Developer</span>
             <i class="fa-solid fa-arrow-right"></i>
@@ -33,7 +33,7 @@
         <!-- Electron Developer button ends -->
 
         <!-- Hamburger icon for smaller devices starts-->
-        <button class="p-2 md:hidden" onclick="handleMenu()">
+        <button class="p-2 lg:hidden" onclick="handleMenu()">
             <i class="fa-solid fa-bars text-gray-600"></i>
         </button>
         <!-- Hamburger icon for smaller devices ends-->
@@ -41,9 +41,9 @@
         <!-- Making Hamburger icon work when clicked -->
 
         <!-- inset 0 is used to give width and height to the div below of entire viewport -->
-        <!-- md:hidden is put so that if someone opens hamburger, and then stretches screen, it auto hides (or closes) -->
+        <!-- lg:hidden is put so that if someone opens hamburger, and then stretches screen, it auto hides (or closes) -->
         <!-- elements with higher z-index are rendered on top of those with lower z-index -->
-         <div id="nav-dialog" class="fixed z-10 bg-white inset-0 p-3 hidden md:hidden">
+         <div id="nav-dialog" class="fixed z-10 bg-white inset-0 p-3 hidden lg:hidden">
 
             <!-- Navbar (after clicking Hamburger icon) starts-->
              <div class="flex justify-between">
@@ -56,7 +56,7 @@
                 <!-- To-Desktop icon with text ends-->
 
                 <!-- Cross-icon -->
-                <button class="p-2 md:hidden" onclick="handleMenu()">
+                <button class="p-2 lg:hidden" onclick="handleMenu()">
                     <i class="fa-solid fa-xmark text-gray-600"></i>
                 </button>
                 <!-- Cross-icon ends-->
