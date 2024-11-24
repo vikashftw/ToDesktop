@@ -12,29 +12,46 @@
     <nav class="p-3 flex bg-white justify-between items-center">
         <a href="#" class="flex gap-2 items-center">
             <img class="object-cover max-w-12 max-h-12" src="https://www.todesktop.com/cdn-cgi/image/width=48,height=48,f=auto,fit=cover/_app/immutable/assets/todesktop-logo.bn2Qe8sb.png" alt="Logo">
-            <span class="text-lg font-medium font-display">ToDesktop</span>
+            <span class="text-lg font-semibold font-display">ToDesktop</span>
         </a>
         <!-- Nav Menu starts-->
         <div class="hidden md:flex gap-12">
-            <a href="#" class="font-medium hover:text-primary">Pricing</a>
-            <a href="#" class="font-medium hover:text-primary">Docs</a>
-            <a href="#" class="font-medium hover:text-primary">Changelog</a>
-            <a href="#" class="font-medium hover:text-primary">Blog</a>
-            <a href="#" class="font-medium hover:text-primary">Login</a>
+            <a href="#" class="font-semibold hover:text-primary">Pricing</a>
+            <a href="#" class="font-semibold hover:text-primary">Docs</a>
+            <a href="#" class="font-semibold hover:text-primary">Changelog</a>
+            <a href="#" class="font-semibold hover:text-primary">Blog</a>
+            <a href="#" class="font-semibold hover:text-primary">Login</a>
         </div>
         <!-- Nav Menu ends-->
 
-        <!-- Electron Developers button starts -->
-        <button class="hidden md:block">
-            Electron Developers
+        <!-- Electron Developer button starts -->
+        <button class="hidden md:flex font-semibold gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600 ">
+            <img src="https://www.todesktop.com/_app/immutable/assets/electron-icon.E8mrXtZM.svg" alt="">
+            <span>Electron Developer</span>
+            <i class="fa-solid fa-arrow-right"></i>
         </button>
-        <!-- Electron Developers button ends -->
+        <!-- Electron Developer button ends -->
 
         <!-- Hamburger icon for smaller devices starts-->
         <button class="p-2 md:hidden" onclick="handleMenu()">
             <i class="fa-solid fa-bars text-gray-600"></i>
         </button>
         <!-- Hamburger icon for smaller devices ends-->
+
+        <!-- Making Hamburger icon work when clicked -->
+        <!-- inset 0 is used to give width and height to the div below of entire viewport -->
+         <div id="nav-dialog" class="fixed bg-white inset-0 p-3">
+            <!-- Navbar (after clicking Hamburger icon) starts-->
+             <div class="flex justify-between">
+                <a href="#" class="flex gap-2 items-center">
+                    <img class="object-cover max-w-12 max-h-12" src="https://www.todesktop.com/cdn-cgi/image/width=48,height=48,f=auto,fit=cover/_app/immutable/assets/todesktop-logo.bn2Qe8sb.png" alt="Logo">
+                    <span class="text-lg font-semibold font-display">ToDesktop</span>
+                </a>
+                <button class="p-2 md:hidden" onclick="handleMenu()">
+                    <i class="fa-solid fa-xmark text-gray-600"></i>
+                </button>
+             </div>
+         </div>
     </nav>
 </body>
 <script src="script.js"></script>
