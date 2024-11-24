@@ -89,12 +89,26 @@
 
         <!-- Hero Section starts -->
          <div id="hero" class="min-h-screen bg-gradient-to-br from-purple-50 via-orange-50 to-transparent">
-            <div id="hero-container" class="max-w-4xl mx-auto px-6 pb-32 flex flex-col">
-                <div id="version-text" class="flex items-center my-6 gap-2 border border-yellow-300 bg-yellow-50 rounded-lg px-3 py-1 w-fit">
+            <div id="hero-container" class="max-w-4xl mx-auto px-6 pt-6 pb-32 flex flex-col">
+                
+                <!-- Version text starts-->
+                <div id="version-text" class="flex items-center my-6 gap-2 border border-yellow-300 bg-yellow-50 rounded-lg px-3 py-1 w-fit shadow-md hover:shadow-lg hover:-translate-y-1 transition group">
                     <div class="w-2 h-2 bg-yellow-400 rounded-full border border-yellow-600"></div>
-                    <p class="font-display ">v0.21.1: <span>Find-in-page bug fixes</span></p>
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <p class="font-display font-semibold text-yellow-600">v0.21.1: 
+                        <span class="text-yellow-800">Find-in-page bug fixes</span>
+                    </p>
+                    <i class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-1 transition duration-300"></i>
                 </div>
+
+                <!-- Heading and Paragraph starts-->
+                 <h1 class="text-4xl font-semibold leading-snug mt-4">Web app to desktop app in minutes</h1>
+                 <p class="text-xl mt-4">Take your web app codebase and transform it into a cross platform desktop app with native functionality.</p>
+
+                <!-- Buttons after heading and paragraph -->
+                 <div id="buttons-container" class="mt-12 flex gap-4 flex-col sm:flex-row">
+                    <button class="px-8 py-3 font-bold rounded-lg text-white bg-primary shadow-sm hover:bg-opacity-90">Download now</button>
+                    <button class="px-8 py-3 font-bold rounded-lg bg-white border border-gray-400 ">Read Docs</button>
+                 </div>
             </div>
          </div>
         <!-- Hero Section ends -->
