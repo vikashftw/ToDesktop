@@ -39,18 +39,44 @@
         <!-- Hamburger icon for smaller devices ends-->
 
         <!-- Making Hamburger icon work when clicked -->
+
         <!-- inset 0 is used to give width and height to the div below of entire viewport -->
-         <div id="nav-dialog" class="fixed bg-red-600 inset-0 p-3 hidden">
+         <div id="nav-dialog" class="fixed bg-white inset-0 p-3 hidden md:hidden">
+
             <!-- Navbar (after clicking Hamburger icon) starts-->
              <div class="flex justify-between">
+
+                <!-- To-Desktop icon with text -->
                 <a href="#" class="flex gap-2 items-center">
                     <img class="object-cover max-w-12 max-h-12" src="https://www.todesktop.com/cdn-cgi/image/width=48,height=48,f=auto,fit=cover/_app/immutable/assets/todesktop-logo.bn2Qe8sb.png" alt="Logo">
                     <span class="text-lg font-semibold font-display">ToDesktop</span>
                 </a>
+                <!-- To-Desktop icon with text ends-->
+
+                <!-- Cross-icon -->
                 <button class="p-2 md:hidden" onclick="handleMenu()">
                     <i class="fa-solid fa-xmark text-gray-600"></i>
                 </button>
+                <!-- Cross-icon ends-->
              </div>
+
+             <!-- Icons when hamburger is clicked -->
+             <div class="mt-6">
+                <!-- Anchor tag is defined as inline by default, we set its class to block so bgcolor takes entire width -->
+                <a href="#" class="font-semibold m-3 p-3 hover:bg-gray-50 block rounded-lg">Pricing</a>
+                <a href="#" class="font-semibold m-3 p-3 hover:bg-gray-50 block rounded-lg">Docs</a>
+                <a href="#" class="font-semibold m-3 p-3 hover:bg-gray-50 block rounded-lg">Changelog</a>
+                <a href="#" class="font-semibold m-3 p-3 hover:bg-gray-50 block rounded-lg">Blog</a>
+                <a href="#" class="font-semibold m-3 p-3 hover:bg-gray-50 block rounded-lg">Login</a>
+             </div>
+
+             <div class="h-[1px] bg-gray-50"></div>
+
+             <button class="w-full mt-6 flex font-semibold gap-2 items-center px-6 py-4 rounded-lg hover:bg-gray-50 ">
+                <img src="https://www.todesktop.com/_app/immutable/assets/electron-icon.E8mrXtZM.svg" alt="">
+                <span>Electron Developers</span>
+            </button>
+
          </div>
     </nav>
 </body>
