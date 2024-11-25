@@ -26,7 +26,7 @@
 
         <!-- Electron Developer button starts -->
         <div class="hidden lg:flex flex-1 justify-end">
-            <button class="font-semibold gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
+            <button class="flex font-semibold gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
                 <img src="https://www.todesktop.com/_app/immutable/assets/electron-icon.E8mrXtZM.svg" alt="">
                 <span class="font-display font-semibold">Electron Developer</span>
                 <i class="fa-solid fa-arrow-right"></i>
@@ -120,7 +120,7 @@
                 </div>
 
                 <!-- Heading and Paragraph starts-->
-                 <h1 class="text-4xl font-semibold leading-snug mt-4 sm:text-6xl sm:leading-normal">Web app to desktop app in minutes</h1>
+                 <h1 class="text-4xl font-semibold leading-snug mt-4 sm:text-6xl">Web app to desktop app in minutes</h1>
                  <p class="text-xl text-gray-800 mt-4 sm:text-2xl sm:mt-8">Take your web app codebase and transform it into a cross platform desktop app with native functionality.</p>
 
                 <!-- Buttons after heading and paragraph -->
@@ -484,7 +484,7 @@
 
         <!-- Bento Grid section starts-->
          <div id="bento-grid" class="container">
-            <h2 class="text-5xl sm:font-semibold mb-14">ToDesktop handles the details</h2>
+            <h2 class="text-5xl sm:font-semibold mb-14 max-w-2xl leading-normal">ToDesktop handles the details</h2>
             <div id="grid-container" class="flex flex-col gap-6 lg:grid lg:grid-cols-3" style="grid-auto-rows: 96px;">
 
                 <div class="row-start-1 row-end-3 group rounded-2xl gradient-hover-outer">
@@ -603,13 +603,13 @@
                     </div>
                 </div>
                 <div class="">
-                    <img class="pl-12" src="https://www.todesktop.com/cdn-cgi/image/width=1280,f=auto,fit=cover/_app/immutable/assets/Customer-Story-ClickUp.6otznAf7.png" alt="">
+                    <img class="pl-12" src="https://anuj-kumar-sharma.github.io/tailwind-landing-page/assets/asset%2046.png" alt="">
                 </div>
             </div>
             <!-- Primary Testimonial end-->
 
             <div class="flex flex-col lg:flex-row justify-between gap-4 mt-6">
-                <div class="rounded-2xl gradient-hover-outer group">
+                <div class="rounded-2xl gradient-hover-outer group h-full">
                     <div class="rounded-2xl p-6 gradient-hover-inner flex flex-col gap-6">
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 bg-blue-200 flex items-center justify-center rounded-full">
@@ -636,7 +636,7 @@
                     </div>
 
                 </div>
-                <div class="rounded-2xl gradient-hover-outer group">
+                <div class="rounded-2xl gradient-hover-outer group h-full">
                     <div class="rounded-2xl p-6 gradient-hover-inner flex flex-col gap-6">
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 bg-rose-200 flex items-center justify-center rounded-full">
@@ -663,7 +663,7 @@
                     </div>
 
                 </div>
-                <div class="rounded-2xl gradient-hover-outer group">
+                <div class="rounded-2xl gradient-hover-outer group h-full">
                     <div class="rounded-2xl p-6 gradient-hover-inner flex flex-col gap-6">
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 bg-yellow-100 flex items-center justify-center rounded-full">
@@ -691,12 +691,192 @@
 
                 </div>
             </div>
+            <div class="rounded-2xl flex flex-col bg-black lg:flex-row mt-12 pt-6 lg:pt-10">
+                <div class="flex flex-col gap-4 p-8 lg:flex-1 lg:gap-8">
+                    <span class="text-gray-400 font-display font-medium">READY TO START BUILDING?</span>
+                    <h2 class="text-4xl text-white leading-tight lg:text-5xl">Create your desktop app for free*</h2>
+                    <p class="text-lg font-light text-gray-400 lg:text-xl">ToDesktop Builder will take you step-by-step through the process of creating your first desktop app in just a few minutes.</p>
+                    <button class="bg-primary text-white py-3 rounded-lg hover:bg-opacity-90 flex justify-center items-center gap-4">
+                        <i class="fa-solid fa-download "></i>
+                        <span>Download ToDesktop Builder</span>
+                    </button>
+                    <p class="text-gray-400 text-xs italic leading-tight">*You can create a desktop app and run it on your computer for free. You will only be charged if you want to create a distributable app for your customers.</p>
+                </div>
+                <div class="lg:w-1/2">
+                    <img src="https://anuj-kumar-sharma.github.io/tailwind-landing-page/assets/asset%2046.png" class="pl-12" alt="">
+                </div>
+            </div>
         </div>
-        <!-- Testimonials section end -->
 
-        <div class="h-[1000px]"></div>
+        <!-- Pricing -->
+        <div id="pricing" class="container">
+            <h2 class="h2-style">Choose a plan that fits your needs</h2>
+            <div class="flex flex-col lg:flex-row mt-6 gap-6">
+                <div class="border flex-1 rounded-xl px-8 pt-12 pb-8 flex flex-col gap-6 lg:border-none lg:bg-slate-50">
+                    <h3 class="text-4xl">Free</h3>
+                    <p class="text-lg font-light">For personal use or testing your app before deploying to customers.</p>
+                    <p class="uppercase">Key Features</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">Run app locally</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-xmark text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">No Code Signing</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-xmark text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">No Native Installers</span>
+                        </li>
+                    </ul>
+                    <button class="border px-8 py-3 text-primary rounded-lg hover:border-gray-800 font-display font-semibold">
+                        Get Started
+                    </button>
+                </div>
+                <div class="border flex-1 rounded-xl px-8 pt-12 pb-8 flex flex-col gap-6 lg:border-none lg:bg-slate-50">
+                    <h3 class="text-4xl">Essential</h3>
+                    <p class="text-lg font-light">For simple desktop apps.</p>
+                    <p class="text-lg font-light"><span class="text-2xl font-semibold">$125</span>/month</p>
+                    <p class="uppercase">Key Features</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">Windows, Mac & Linux</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">Code Signing</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">Native Installers</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">Email/chat support</span>
+                        </li>
+                    </ul>
+                    <button class="border px-8 py-3 text-primary rounded-lg hover:border-gray-800 font-display font-semibold">
+                        Get Started
+                    </button>
+                </div>
+                <div class="border flex-1 relative rounded-xl px-8 pt-12 pb-8 flex flex-col gap-6 lg:border-none lg:bg-slate-50">
+                    <p class="text-blue-800 text-sm bg-indigo-100 rounded-full w-fit px-4 py-2 font-display font-semibold absolute top-0 right-8 -translate-y-1/2">Most Popular</p>
+                    <h3 class="text-4xl">Professional</h3>
+                    <p class="text-lg font-light">For sophisticated desktop apps.</p>
+                    <p class="text-lg font-light"><span class="text-2xl font-semibold">$99</span>/month</p>
+                    <p class="uppercase">Key Features</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-xmark text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-xmark text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                    </ul>
+                    <button class="px-8 py-3 text-white bg-primary rounded-lg hover:bg-opacity-90 font-display font-semibold">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQs -->
+        <div id="faq" class="container">
+            <h2 class="h2-style">FAQs</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 mt-6 gap-6 items-start">
+                <div class="group rounded-xl border border-gray-200 bg-gray-50 p-6">
+                    <dt class="cursor-pointer flex justify-between items-center" aria-controls="faq-1">
+                        <p class="font-semibold text-lg">Is ToDesktop For Me?</p>
+                        <i class="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                    </dt>
+                    <dd id="faq-1" class="hidden text-lg font-light mt-6">
+                        <p>That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.</p>
+                    </dd>
+                </div>
+                <div class="group cursor-pointer rounded-xl border border-gray-200 bg-gray-50 p-6">
+                    <dt class="flex justify-between items-center" aria-controls="faq-2">
+                        <p class="font-semibold text-lg">Is ToDesktop For Me?</p>
+                        <i class="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                    </dt>
+                    <dd id="faq-2" class="hidden text-lg font-light mt-6">
+                        <p>That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.</p>
+                    </dd>
+                </div>
+                <div class="group rounded-xl border border-gray-200 bg-gray-50 p-6">
+                    <dt class="cursor-pointer flex justify-between items-center" aria-controls="faq-3">
+                        <p class="font-semibold text-lg">Is ToDesktop For Me?</p>
+                        <i class="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                    </dt>
+                    <dd id="faq-3" class="hidden text-lg font-light mt-6">
+                        <p>That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.</p>
+                    </dd>
+                </div>
+                <div class="group cursor-pointer rounded-xl border border-gray-200 bg-gray-50 p-6">
+                    <dt class="flex justify-between items-center" aria-controls="faq-4">
+                        <p class="font-semibold text-lg">Is ToDesktop For Me?</p>
+                        <i class="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                    </dt>
+                    <dd id="faq-4" class="hidden text-lg font-light mt-6">
+                        <p>That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.</p>
+                    </dd>
+                </div>
+                <div class="group rounded-xl border border-gray-200 bg-gray-50 p-6">
+                    <dt class="cursor-pointer flex justify-between items-center" aria-controls="faq-5">
+                        <p class="font-semibold text-lg">Is ToDesktop For Me?</p>
+                        <i class="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                    </dt>
+                    <dd id="faq-5" class="hidden text-lg font-light mt-6">
+                        <p>That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.</p>
+                    </dd>
+                </div>
+                <div class="group cursor-pointer rounded-xl border border-gray-200 bg-gray-50 p-6">
+                    <dt class="flex justify-between items-center" aria-controls="faq-6">
+                        <p class="font-semibold text-lg">Is ToDesktop For Me?</p>
+                        <i class="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                    </dt>
+                    <dd id="faq-6" class="hidden text-lg font-light mt-6">
+                        <p>That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.</p>
+                    </dd>
+                </div>
+            </div>
+        </div>
     </main>
-    <!-- Main Section ends -->
+    <footer class="container">
+        <div class="rounded-lg border lg:border-none lg:bg-gray-50 bg-gray-50 flex flex-col lg:flex-row-reverse items-center px-8 py-12 gap-8">
+            <a href="#" class="font-light font-display">Documentation</a>
+            <div class="flex gap-8 text-lg">
+                <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="#" id="brand" class="flex gap-2 items-center flex-1">
+                <img class="object-cover max-w-12 max-h-12" src="https://www.todesktop.com/cdn-cgi/image/width=48,height=48,f=auto,fit=cover/_app/immutable/assets/todesktop-logo.bn2Qe8sb.png" alt="Logo">
+                <span class="text-lg font-medium font-display">ToDesktop</span>
+            </a>
+        </div>
+        <div id="sub-footer" class="flex flex-col gap-6 items-center justify-center my-12">
+            <div class="flex gap-2 items-center ">
+                <img class="w-4 h-4" src="https://www.todesktop.com/_app/immutable/assets/y-combinator-logo.VDo9bew9.svg" alt="Y-combinator">
+                <p class="text-sm text-gray-600">A Y Combinator company.</p>
+            </div>
+            <p class="text-sm text-gray-400">© 2024 ToDesktop, Inc. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 <script src="script.js"></script>
 </html>
